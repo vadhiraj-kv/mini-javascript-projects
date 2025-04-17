@@ -1,0 +1,44 @@
+h2{
+  width: 350px;
+  text-align: center;
+}
+
+.container{
+  display: grid;
+  justify-content: center;
+}
+
+.button-cluster{
+  display: flex;
+
+}
+
+#grey{
+  width: 80px;
+  height: 80px;
+  background-color: grey;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#white{
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 5px;
+}
+#blue{
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  border: 1px solid black;
+  margin: 5px;
+}
+#yellow{
+  width: 80px;
+  height: 80px;
+  background-color: yellow;
+  border: 1px solid black;
+  margin: 5px;
+}

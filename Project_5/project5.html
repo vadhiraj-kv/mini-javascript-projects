@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repaint</title>
+  <style>
+    .container{
+      display: grid;
+      justify-content: center;
+    }
+    .button{
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>
+      Repaint the background color by clicking this 👇 
+    </h2>
+   
+    <button class="button" onclick="setColor()">REPAINT</button>
+
+    <h2 align="center">A random color will be generated</h2>
+  </div>
+  
+</body>
+<script>
+
+  function getNumber(){
+    let length = '0123456789ABCDEF'
+    let color = '#'
+    for (let i = 0; i < 6; i++) {
+      color += length[Math.floor(Math.random()*16)]
+    }
+    return color
+  }
+
+  function setColor(){
+    const newColor = getNumber()
+    document.body.style.backgroundColor = newColor
+  }
+
+</script>
+</html>
