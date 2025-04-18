@@ -1,0 +1,71 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  color: white;
+}
+
+.container{
+  display: flex;
+  width:  700px;
+  text-align: center;
+  flex-direction: column;
+  border: 2px solid red;
+  margin: 100px auto;
+  row-gap: 10px;
+  background-color: rgb(80, 78, 78);
+}
+
+.title-name{
+  font-size: 20px;
+  background: #000;
+}
+
+.text-box{
+  padding: 10px;
+}
+
+.inputbox{
+  padding: 10px;
+  font-size: 15px;
+}
+
+.button-submit{
+  background-color: green;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 15px black;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+  &:active{
+    box-shadow: none;
+  }
+}
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+#newgame {
+  width: 150px;
+  background-color: green;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 15px black;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  margin-top: 0;
+}
+
+
+

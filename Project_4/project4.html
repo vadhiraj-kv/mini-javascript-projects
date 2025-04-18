@@ -4,8 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guess The Number</title>
+  <link rel="stylesheet" href="project4.css">
 </head>
 <body>
-  
+  <form>
+    <div class="container">
+      <div class="title-name">
+        <p>Number guessing game</p>
+      </div>
+      <div class="title-main-body">
+        <p>Try and guess a random number between 1 and 100</p>
+        <p>you have 10 attempts to guess the right number.</p>
+      </div>
+      <div class="Main-text">
+        <h1>GUESS THE NUMBER</h1>
+      </div>
+      <div class="text-box">
+        <input id="guessField" class="inputbox" type="text" placeholder="Enter the number">
+      </div>
+      <div>
+        <button id="submit" class="button-submit" type="button">Submit guess</button>
+      </div>
+      <div class="title-body">
+        <p>Previous guesses: <span class="previous"></span></p>
+        <p >Remaining Guesses: <span class="guesses">10</span></p>
+        <p style="display: block;" class="lowOrHigh"></p>
+      </div>
+    </div>
+  </form>
 </body>
+<script src="project4.js"></script>
 </html>
