@@ -24,5 +24,10 @@ a:link{
 
 div{
   display: grid;
+
   justify-content: center;
+}
+
+.main-title{
+  justify-self: center;
 }
