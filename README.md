@@ -30,15 +30,24 @@ _A simple HTML CSS and Javascript project to display the current time_
 
 _A simple HTML CSS and Javascript project to guess the number with users previous guesses displayed_ 
 
-![BMI calculator](./images/guess1.JPG)
+![Guess the Number](./images/guess1.JPG)
 
-![BMI calculator](./images/guess2.JPG)
+![Guess the Number](./images/guess2.JPG)
 
 
 **5. Project Five - Repaint Random 🎨**
 
 _A simple HTML CSS and Javascript project to repaint the background using randomly generated hexavalue colors_ 
 
-![BMI calculator](./images/repaint1.JPG)
+![Repaint Random](./images/repaint1.JPG)
 
-![BMI calculator](./images/repaint2.JPG)
+![Repaint Random](./images/repaint2.JPG)
+
+
+**5. Project Six - To-Do App 📅**
+
+_A simple HTML CSS and Javascript project to create a To-Do app to add new Task and edit existing tasks_ 
+
+![To-Do App](./images/todo.JPG)
+
+
