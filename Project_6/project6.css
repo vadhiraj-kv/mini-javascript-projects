@@ -117,6 +117,14 @@ li{
 }
 
 #todoList p{
+
+  display: flex;
+  gap: 1rem;
+  color:var(--dark);
+  align-items: center;
+}
+
+#todoList .disabled{
   color: #8f98a8;
 }
 
@@ -125,6 +133,13 @@ li{
   text-decoration: line-through;
 }
 
+
+input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  -moz-appearance: none;
+}
 
 input[type="checkbox"]::before{
   content: "\2713";
@@ -139,11 +154,12 @@ input[type="checkbox"]::before{
   color: transparent;
 }
 
-input[type="checkbox"]::before::after{
+input[type="checkbox"]:checked::before{
   color: var(--white);
   background-color: var(--green) ;
   border: 0.06rem solid var(--green);
   border-radius: 50%;
+  
 }
 
 .counter{
@@ -195,6 +211,7 @@ input[type="checkbox"]::before::after{
 .scroll{
   height: 15rem;
   scrollbar-width: thin;
+  overflow-y: auto;
 }
 
 .scroll::-webkit-scrollbar{
