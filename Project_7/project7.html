@@ -28,16 +28,21 @@
 
   startBtn.addEventListener('click',()=>{
     
-    bgcolor = setInterval(() =>{
+    if(bgcolor == null){
+      bgcolor = setInterval(() =>{
       const newColor = getNumber()
       document.body.style.backgroundColor = newColor
 
     },1000)
+    }
+
+   
   })
 
 
 stopBtn.addEventListener('click',() =>{
     clearInterval(bgcolor)
+    bgcolor = null
     console.log('stopped')
 })
 </script>
