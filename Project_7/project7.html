@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interval color</title>
+</head>
+<body>
+  <h1>Start should change the Background color every second</h1>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+</body>
+<script>
+  const startBtn = document.getElementById('start')
+  const stopBtn = document.getElementById('stop')
+  let bgcolor
+
+  //generate a random color 
+
+  function getNumber(){
+    let length = '0123456789ABCDEF'
+    let color = '#'
+    for (let i = 0; i < 6; i++) {
+      color += length[Math.floor(Math.random()*16)]
+    }
+    return color
+  }
+
+  startBtn.addEventListener('click',()=>{
+    
+    bgcolor = setInterval(() =>{
+      const newColor = getNumber()
+      document.body.style.backgroundColor = newColor
+
+    },1000)
+  })
+
+
+stopBtn.addEventListener('click',() =>{
+    clearInterval(bgcolor)
+    console.log('stopped')
+})
+</script>
+</html>
